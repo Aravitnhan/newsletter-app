@@ -22,7 +22,7 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
             />
           )}
           <div>
-            <h1 className="display-4 fw-black mb-0" style={{fontSize: '2.8rem'}}>TRENTGO</h1>
+            <h1 className="display-4 fw-black mb-0" style={{fontSize: '2.8rem'}}>TRENTGO NEWSLETTER</h1>
             <p className="lead mb-0 small">Marketplace Intelligence for Port Spare Parts</p>
           </div>
         </div>
@@ -39,6 +39,8 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
             <a href={navUrls.outlook} className="text-white-50 text-decoration-none hover-white">Delivered Orders</a>
             <span className="text-white-50">|</span>
             <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Pricing</a>
+          <span className="text-white-50">|</span>
+            <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Advertise</a>
           </div>
 
           {/* Spacer pushes search to right */}

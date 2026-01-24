@@ -27,12 +27,12 @@ const sampleData = {
     topad_2
   ],
   navUrls: {
-    marketplace: "#", intel: "#", outlook: "#", delivered: "#", advertise: "#"
+    marketplace: "#marketplace", intel: "#", outlook: "#", delivered: "#", advertise: "#"
   },
   logoSrc: "https://tse2.mm.bing.net/th/id/OIP.zha51VmL8QuH7uxfKMzsTAHaF4?pid=ImgDet&w=199&h=158&c=7&dpr=2&o=7&rm=3",
   
   intelligence: {
-    headline: "Global Port Equipment Lead Times Hit 18-Month High",
+    headline: "Featured Articles",
     summary: "Supply chain bottlenecks driving unprecedented delays across crane, conveyor equipment.",
     url: "#"
   },
@@ -46,7 +46,7 @@ const sampleData = {
     {
       url: "#",
       image: ad_2,
-      title: "Global Steel Co",
+      title: "",
       description: "Steel castings 24/7"
     },
     {
@@ -56,7 +56,7 @@ const sampleData = {
       description: "Electrical systems"
     },
     {
-      url: "#",
+      url: "https://www.hesaitech.com",
       image: ad_4,
       title: "QuickParts USA",  // No image - uses gradient
       description: "Same-day dispatch",
@@ -76,12 +76,12 @@ const sampleData = {
       description: `
         Right now, every tool needed to synchronize a vessel’s arrival with a terminal’s real-time capability already exists. AIS, berth planning engines, crane telemetry, yard heatmaps, Machine learning & digital twins, maintenance forecasts, and weather-powered ETA models.
       `,
-      url: "#",
+      url: "https://www.linkedin.com/pulse/importance-port-call-optimization-jon-arnup-l1ixc/?trackingId=bCnJoUFqQoGwOzuENqhclw%3D%3D",
       buttonText: "Read More"
     },
     {
       image: "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png",
-      title: "PortEquip Solutions Ltd",
+      title: "Trentgo",
       description: "UK Stocked • Global Shipping • Crane Parts",
       url: "#",
       buttonText: "Visit Sponsor",
@@ -100,7 +100,7 @@ const sampleData = {
       description: `
         I’ve seen a major terminal grind to a halt because the phones were cut off (bill overlooked and not paid on time). That’s when many of us realised that the operations literally ran on WhatsApp. That wasn’t an exception. It was a glimpse of how fragile things can be.
       `,
-      url: "#",
+      url: "https://www.linkedin.com/pulse/why-datadriven-ports-actually-win-jon-arnup-gkbbc/?trackingId=o3NfEKJlRxaNkwQjoI2KAQ%3D%3D",
       buttonText: "Read More"
     },
     {
@@ -109,12 +109,12 @@ const sampleData = {
       description: `
        When container volumes fall, the pressure shifts. Purchases get delayed. Standing orders get pulled back. Teams hold their breath, then rush for last-minute buys the moment an uptick appears
       `,
-      url: "#",
+      url: "https://www.linkedin.com/pulse/container-volumes-system-readiness-jon-arnup-e8lec/?trackingId=RAUpYAHxQgWW68TnCNeQJg%3D%3D",
       buttonText: "Read More"
     },
     {
       image: "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
-      title: "Global Steel Co",
+      title: "Trentgo",
       description: "Steel castings • 24/7 dispatch • Worldwide shipping",
       url: "#",
       buttonText: "Get Quote",
@@ -131,8 +131,35 @@ const sampleData = {
       description: `
        We’re seeing more large operators taking everything in-house. It’s becoming the norm, not the exception. Even mid-tier players are leaning the same way, believing the strongest results come from internal consolidation.
       `,
-      url: "#",
+      url: "https://www.linkedin.com/pulse/port-procurement-needs-reset-jon-arnup-6seyf/?trackingId=7tEFZFWjQuOihsx%2FRQc%2Bxw%3D%3D",
       buttonText: "Read More"
+    },
+
+  ],
+  updates:[
+    {
+      image: ad_3,
+      date: "December 11, 2024",
+      title: "Kernal",
+      description:"specialising in control systems and automation components for RTGs and STS cranes",
+      leadTime:"14 - 28 days",
+      regions:'APAC / Middle East'
+    },
+    {
+      image: jusonad,
+      date: "December 11, 2024",
+      title: "Juson Automation",
+      description:"Automation components and accessories used in industrial settings",
+      leadTime:"1 - 3 days",
+      regions:'Asia, Middle East, Europe, Africa'
+    },
+    {
+      image: ad_4,
+      date: "December 11, 2024",
+      title: "Hesai",
+      description:"Advanced LiDAR sensors used in ADAS, autonomous vehicles, and robotics",
+      leadTime:"14 - 28 days",
+      regions:'Asia, North America, and Europe'
     },
   ]
 };

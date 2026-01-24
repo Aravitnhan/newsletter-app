@@ -9,6 +9,7 @@ import SponsoredFeature from '../components/sponserfetaure';
 import TopLeaderboardAd from '../components/topLeaderBoard';
 import ContentCards from '../components/contentcards';
 import FooterComponent from '../components/footercomponent';
+import UpdateCard from '../components/updatecard';
 const TrentGONewsletter = (props) => {
   return (
     <div className="">
@@ -27,6 +28,30 @@ const TrentGONewsletter = (props) => {
           
           {/* All content now in ONE array of cards */}
           <ContentCards cards={props.contentCards} />
+    <div className="container my-5">
+    <div className="card shadow-sm border">
+    <div className="">
+      <div className="pb-0">
+        <section id='marketplace'></section>
+        <h2 id='' className="h1 fw-bold text-dark ">Market Place</h2>
+      <div className="row g-4">
+        {props.updates.map((item, index) => (
+          <div key={index} className="col-md-6 col-lg-4">
+            <UpdateCard
+              image={item.image}
+              date={item.date}
+              title={item.title}
+              description={item.description}
+              leadTime={item.leadTime}
+              regions={item.regions}
+            />
+          </div>
+        ))}
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
         </div>
         
         {/* Right Sidebar Ad */}

@@ -1,6 +1,6 @@
 import React from "react";
 const ContentCards = ({ cards }) => (
-  <div className="bg-white border rounded-2">
+  <div className="bg-white border rounded-2 p-4">
     {cards.map((card, index) => {
       // Check if this card is an ad
       const isAd = card.isAd === true;
@@ -10,6 +10,11 @@ const ContentCards = ({ cards }) => (
           <div className="p-3">
             {isAd ? (
               // AD VERSION - Three images in row (3 columns)
+              <div>
+                <div className="bg-light text-center py-1 px-3 border-top fs-4">
+                  📈 Copper: +6.2% MoM
+                  📉 Steel: −1.1% MoM
+                </div>
               <div className="position-relative">
                 <a href={card.url} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <div className="row g-2 mb-2">
@@ -61,7 +66,7 @@ const ContentCards = ({ cards }) => (
                   {/* Sponsored Badge */}
                   <div className="position-absolute top-0 start-0 m-2" style={{zIndex: 10}}>
                     <span className="badge bg-warning text-dark px-3 py-1 fw-semibold small">
-                      Most searched spare parts
+                      View affected spare parts 
                     </span>
                   </div>
                   
@@ -70,6 +75,7 @@ const ContentCards = ({ cards }) => (
                     <small className="text-muted fw-medium">{card.title}</small>
                   </div>
                 </a>
+              </div>
               </div>
             ) : (
               // REGULAR CONTENT VERSION (unchanged)
@@ -107,6 +113,7 @@ const ContentCards = ({ cards }) => (
 
                   <a
                     href={card.url}
+                    target="_blank"
                     className="btn btn-danger btn-sm px-3 fw-semibold"
                     style={{ borderRadius: '2px' }}
                   >

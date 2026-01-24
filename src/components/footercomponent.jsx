@@ -1,4 +1,5 @@
 import React from "react";
+import videos from '../assets/videos/generated_video.mp4'
 const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
   <footer className="bg-white border-top border-light mt-5 pt-4">
     <div className="container-fluid px-3 px-lg-4">
@@ -6,21 +7,41 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
       {/* Footer Ad Banner */}
       <div className="row mb-4">
         <div className="col-12">
-          <div className="card border shadow-sm">
-            <div className="card-body p-3">
-              <small className="text-muted text-uppercase fw-bold small mb-2 d-inline-block">Sponsored</small>
-            </div>
-            <div className="card-body p-3 text-center">
-              <a href={adFooterUrl} target="_blank" rel="noopener noreferrer" className="stretched-link">
-                <img 
-                  src={adFooterImg} 
-                  className="img-fluid rounded" 
-                  style={{maxHeight: '90px'}}
-                  alt="Footer Sponsored Banner"
-                />
-              </a>
-            </div>
-          </div>
+          <div className="mb-4">
+                 <div className="card border shadow-sm rounded-3">
+                   <div className="card-header bg-light border-bottom py-2 px-3">
+                     <small className="text-muted text-uppercase fw-bold tracking-wide">
+                       Sponsored Leaderboard
+                     </small>
+                   </div>
+                   <div className="card-body p-2 text-center">
+                     <a 
+                      //  href={adUrl} 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       className="stretched-link text-decoration-none d-block w-100"
+                     >
+                       <video 
+                         src={videos} 
+                         className="img-fluid rounded-2 w-100 border-0" 
+                         style={{ 
+                           width: '100%',          
+                           height: '140px',        
+                           objectFit: 'cover'      
+                         }}
+                         muted
+                         autoPlay
+                         loop
+                         playsInline
+                         preload="metadata"
+                       />
+                     </a>
+                   </div>
+                   <div className="card-footer bg-light text-center py-1 px-3 border-top">
+                     <small className="text-muted">Advertisement</small>
+                   </div>
+                 </div>
+               </div>
         </div>
       </div>
 
