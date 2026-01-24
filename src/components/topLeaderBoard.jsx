@@ -1,4 +1,6 @@
-const TopLeaderboardAd = ({ adUrl, adImg }) => (
+import React from "react";
+import videos from '../assets/videos/generated_video.mp4'
+const TopLeaderboardAd = ({ adUrl, adVideo }) => (
   <div className="mb-4">
     <div className="card border shadow-sm rounded-3">
       <div className="card-header bg-light border-bottom py-2 px-3">
@@ -13,17 +15,19 @@ const TopLeaderboardAd = ({ adUrl, adImg }) => (
           rel="noopener noreferrer"
           className="stretched-link text-decoration-none d-block w-100"
         >
-          <img 
-            src={adImg} 
+          <video 
+            src={videos} 
             className="img-fluid rounded-2 w-100 border-0" 
             style={{ 
-              height: '140px',        // Banner height
-              objectFit: 'contain',   // Full image visible
-              maxWidth: '100%',
-              minHeight: '140px'
+              width: '100%',          // 👈 Full width
+              height: '140px',        // 👈 Fixed height
+              objectFit: 'cover'      // 👈 Full coverage (no gaps)
             }}
-            alt="Top Sponsored Leaderboard Ad"
-            loading="lazy"
+            muted
+            autoPlay
+            loop
+            playsInline
+            preload="metadata"
           />
         </a>
       </div>

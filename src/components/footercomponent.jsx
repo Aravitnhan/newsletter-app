@@ -1,3 +1,4 @@
+import React from "react";
 const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
   <footer className="bg-white border-top border-light mt-5 pt-4">
     <div className="container-fluid px-3 px-lg-4">

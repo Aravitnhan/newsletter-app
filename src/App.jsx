@@ -14,6 +14,7 @@ import port from'./assets/image/content/port.jpg'
 import port_2 from'./assets/image/content/port-2.jpg'
 import topad from'./assets/image/top-ad.jpg'
 import topad_2 from './assets/image/top-ad2.png'
+import React from 'react';
 function App() {
   const [count, setCount] = useState(0)
 const sampleData = {

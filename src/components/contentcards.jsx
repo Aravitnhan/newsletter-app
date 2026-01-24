@@ -1,3 +1,4 @@
+import React from "react";
 const ContentCards = ({ cards }) => (
   <div className="bg-white border rounded-2">
     {cards.map((card, index) => {

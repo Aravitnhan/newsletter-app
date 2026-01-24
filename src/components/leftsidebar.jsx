@@ -1,3 +1,4 @@
+import React from "react";
 const LeftSidebarAd = ({ adUrl, adImg }) => (
   <div className="col-lg-2 d-none d-lg-block">
     <div className="card border shadow-sm h-100">

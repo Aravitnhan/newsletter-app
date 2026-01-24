@@ -1,3 +1,4 @@
+import React from "react";
 const RightSidebarAd = ({ sponsorAds }) => (
   <div className="col-lg-4 col-xl-4  d-lg-block">
     <div
