@@ -7,7 +7,7 @@ const RightSidebarAd = ({ sponsorAds }) => (
     >
       <div className="card-header bg-white border-bottom py-2">
         <small className="text-muted text-uppercase fw-semibold">
-          Supplier
+          Suppliers
         </small>
       </div>
 
