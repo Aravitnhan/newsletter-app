@@ -32,13 +32,13 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
           
           {/* Navigation */}
           <div className="d-flex flex-wrap align-items-center gap-2 small order-lg-1 order-1">
-            <a href={navUrls.marketplace} className="text-white-50 text-decoration-none hover-white">Home</a>
+            <a href={navUrls.marketplace} className="text-white-50 text-decoration-none hover-white">Marketplace</a>
             <span className="text-white-50">|</span>
-            <a href={navUrls.intel} className="text-white-50 text-decoration-none hover-white">Most searched spare parts</a>
+            <a href={navUrls.intel} className="text-white-50 text-decoration-none hover-white">Featured Articles</a>
             <span className="text-white-50">|</span>
-            <a href={navUrls.outlook} className="text-white-50 text-decoration-none hover-white">Most Viewed Post</a>
+            <a href={navUrls.outlook} className="text-white-50 text-decoration-none hover-white">Delivered Orders</a>
             <span className="text-white-50">|</span>
-            <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Advertise</a>
+            <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Pricing</a>
           </div>
 
           {/* Spacer pushes search to right */}
