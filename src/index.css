@@ -1,0 +1,56 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
+.trentgo-search-sm {
+  width: 220px;   /* small & clean */
+}
+/* Bigger sponsor image */
+.sponsor-img-lg {
+  width: 100%;
+  height: 120px;   /* increased */
+  object-fit: cover;
+}
+
+/* Bigger placeholder */
+.sponsor-placeholder-lg {
+  height: 120px;
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px;
+}
+
+/* Hover effect (keep same) */
+.sponsor-card {
+  transition: all 0.25s ease;
+  border: 1px solid #e9ecef;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  background: #ffffff;
+}
+.sponsor-img-full {
+  width: 100% !important;   /* FULL card width */
+  height: 130px;            /* balanced height */
+  object-fit: cover;
+}
+
+/* Keep hover effect */
+.sponsor-card {
+  transition: all 0.25s ease;
+  border: 1px solid #e9ecef;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  background: #ffffff;
+}
+
