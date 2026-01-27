@@ -26,7 +26,7 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
                          className="img-fluid rounded-2 w-100 border-0" 
                          style={{ 
                            width: '100%',          
-                           height: '140px',        
+                           height: '150px',        
                            objectFit: 'cover'      
                          }}
                          muted
@@ -37,9 +37,9 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
                        />
                      </a>
                    </div>
-                   <div className="card-footer bg-light text-center py-1 px-3 border-top">
+                   {/* <div className="card-footer bg-light text-center py-1 px-3 border-top">
                      <small className="text-muted">Advertisement</small>
-                   </div>
+                   </div> */}
                  </div>
                </div>
         </div>
