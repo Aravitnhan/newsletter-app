@@ -11,11 +11,11 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
             <img 
               src={logoSrc}
               alt="TrentGO Logo"
-              className="rounded-circle shadow-sm"
+              className="shadow-sm"
               style={{
                 width: '80px',
                 height: '80px',
-                objectFit: 'cover',
+                objectFit: 'fill',
                 border: '3px solid rgba(255,255,255,0.4)',
                 boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
               }}

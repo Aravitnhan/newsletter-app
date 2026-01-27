@@ -44,12 +44,6 @@ const sampleData = {
       description: "UK crane parts"
     },
     {
-      url: "#",
-      image: ad_2,
-      title: "",
-      description: "Steel castings 24/7"
-    },
-    {
       url: "https://www.kernal-automation.com",
       image: ad_3,
       title: "MarineTech Ltd",
@@ -60,6 +54,12 @@ const sampleData = {
       image: ad_4,
       title: "QuickParts USA",  // No image - uses gradient
       description: "Same-day dispatch",
+    },
+    {
+      url: "http://bjwdparts.com/阿里云万网虚机过期页面",
+      image: ad_2,
+      title: "",
+      description: "Steel castings 24/7"
     },
     {
       url: "https://www.guizhouwirerope.com/",
