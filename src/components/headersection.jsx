@@ -3,84 +3,83 @@ import React from 'react';
 const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
   <div className="mb-4">
     <div className="card shadow-sm border-0 bg-primary text-white rounded-3">
-      <div className="card-body p-4">
-        
-        {/* Title + Larger Logo */}
-        <div className="d-flex align-items-center gap-3 mb-3">
-          {logoSrc && (
-            <img 
-              src={logoSrc}
-              alt="TrentGO Logo"
-              className="shadow-sm"
-              style={{
-                width: '80px',
-                height: '80px',
-                objectFit: 'fill',
-                border: '3px solid rgba(255,255,255,0.4)',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
-              }}
-            />
-          )}
-          <div>
-            <h1 className="display-4 fw-black mb-0" style={{fontSize: '2.8rem'}}>TRENTGO NEWSLETTER</h1>
-            <p className="lead mb-0 small">Marketplace Intelligence for Port Spare Parts</p>
-          </div>
-        </div>
+      <div className="">
 
-        {/* Nav + Search + Social + Actions */}
-        <div className="d-flex flex-wrap align-items-center gap-3">
-          
-          {/* Navigation */}
-          <div className="d-flex flex-wrap align-items-center gap-2 small order-lg-1 order-1">
-            <a href={navUrls.marketplace} className="text-white-50 text-decoration-none hover-white">Marketplace</a>
-            <span className="text-white-50">|</span>
-            <a href={navUrls.intel} className="text-white-50 text-decoration-none hover-white">Featured Articles</a>
-            <span className="text-white-50">|</span>
-            <a href={navUrls.outlook} className="text-white-50 text-decoration-none hover-white">Delivered Orders</a>
-            <span className="text-white-50">|</span>
-            <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Pricing</a>
-          <span className="text-white-50">|</span>
-            <a href={navUrls.advertise} className="text-white-50 text-decoration-none hover-white">Advertise</a>
+        {/* TOP BAR */}
+        <div className="d-flex align-items-center justify-content-between gap-3">
+
+          {/* LEFT – Logo + Title */}
+          <div className="d-flex align-items-center gap-3 flex-shrink-0">
+            {logoSrc && (
+              <img
+                src={logoSrc}
+                alt="TrentGO Logo"
+                className="header-logo"
+              />
+            )}
+            <div className="d-none d-md-block">
+              <h5 className="fw-bold mb-0">TRENTGO NEWSLETTER</h5>
+              <small className="text-white-50">
+                Marketplace Intelligence for Port Spare Parts
+              </small>
+            </div>
           </div>
 
-          {/* Spacer pushes search to right */}
-          <div className="flex-grow-1 order-lg-2 order-3"></div>
-
-          {/* Social Media Icons */}
-          <div 
-          className="position-absolute top-0 end-0 p-3"
-          style={{ zIndex: 10 }}
-        >
-          <div className="d-flex gap-2">
-            <a href={socialUrls?.linkedin || "#"} target="_blank" rel="noopener noreferrer" className="text-white hover-white fs-5">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <a href={socialUrls?.xcom || "#"} target="_blank" rel="noopener noreferrer" className="text-white hover-white fs-5">
-              <i className="bi bi-twitter-x"></i>
-            </a>
-          </div>
-        </div>
-
-          {/* Search + Buttons */}
-          <div className="d-flex align-items-center gap-2 order-lg-4 order-4">
+          {/* CENTER – Search (YouTube style) */}
+          <div className="header-search flex-grow-1 mx-3 d-none d-md-flex">
             <input
               type="text"
               className="form-control form-control-sm"
               placeholder="Search spare parts..."
             />
-            <button className="btn btn-light btn-sm fw-semibold px-3">
+            <button className="btn btn-light btn-sm px-3 fw-semibold">
               Search
-            </button>
-            <button className="btn btn-outline-light btn-sm fw-semibold px-3">
-              Subscribe
             </button>
           </div>
 
+          {/* RIGHT – Actions + Social */}
+          <div className="d-flex align-items-center gap-3 flex-shrink-0">
+            <button className="btn btn-outline-light btn-sm fw-semibold">
+              Subscribe
+            </button>
+
+            <a
+              href={socialUrls?.linkedin || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white fs-5"
+            >
+              <i className="bi bi-linkedin"></i>
+            </a>
+
+            <a
+              href={socialUrls?.xcom || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white fs-5"
+            >
+              <i className="bi bi-twitter-x"></i>
+            </a>
+          </div>
+
+        </div>
+
+        {/* SECOND ROW – Navigation (like YouTube tabs) */}
+        <div className="yt-pill-wrapper mt-3">
+          <div className="yt-pill-scroll">
+            <button className="yt-pill">Marketplace</button>
+            <button className="yt-pill">Featured Articles</button>
+            <button className="yt-pill">Delivered Orders</button>
+            <button className="yt-pill">Pricing</button>
+            <button className="yt-pill">Advertise</button>
+
+          </div>
         </div>
 
       </div>
     </div>
   </div>
 );
+
 
 export default HeaderSection;

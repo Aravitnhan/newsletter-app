@@ -2,13 +2,13 @@ import React from "react";
 import videos from '../assets/videos/generated_video.mp4'
 const TopLeaderboardAd = ({ adUrl, adVideo }) => (
   <div className="mb-4">
-    <div className="card border shadow-sm rounded-3">
-      <div className="card-header bg-light border-bottom py-2 px-3">
+    <div className="border shadow-sm rounded-3">
+      <div className="card-header bg-light border-bottom ">
         <small className="text-muted text-uppercase fw-bold tracking-wide">
           Sponsored Leaderboard
         </small>
       </div>
-      <div className="card-body p-2 text-center">
+      <div className="card-body text-center">
         <a 
           href={adUrl} 
           target="_blank" 

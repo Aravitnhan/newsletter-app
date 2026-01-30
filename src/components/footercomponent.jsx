@@ -5,10 +5,10 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
     <div className="container-fluid px-3 px-lg-4">
       
       {/* Footer Ad Banner */}
-      <div className="row mb-4">
+      <div className="row mb-2">
         <div className="col-12">
           <div className="mb-4">
-                 <div className="card border shadow-sm rounded-3">
+                 <div className="border shadow-sm rounded-3">
                    <div className="card-header bg-light border-bottom py-2 px-3">
                      <small className="text-muted text-uppercase fw-bold tracking-wide">
                        Sponsored Leaderboard

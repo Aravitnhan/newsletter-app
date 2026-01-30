@@ -10,6 +10,9 @@ import TopLeaderboardAd from '../components/topLeaderBoard';
 import ContentCards from '../components/contentcards';
 import FooterComponent from '../components/footercomponent';
 import UpdateCard from '../components/updatecard';
+import  featurearticle from'../assets/image/content-card/featured article.jpg';
+import ad_4 from '../assets/image/ad-4.png';
+import happenopenings from '../assets/image/content-card/happenings.jpg'
 const TrentGONewsletter = (props) => {
   return (
     <div className="">
@@ -22,41 +25,167 @@ const TrentGONewsletter = (props) => {
       <HeaderSection navUrls={props.navUrls} logoSrc={props.logoSrc} />
       
       {/* Custom 2-Column Layout (NO LEFT SIDEBAR) */}
-      <div className="row">
-        <div className="col-lg-8 col-xl-8">
-          <IntelligenceHero {...props.intelligence} />
-          
-          {/* All content now in ONE array of cards */}
-          <ContentCards cards={props.contentCards} />
-    <div className="container my-5">
-    <div className="card shadow-sm border">
-    <div className="">
-      <div className="pb-0">
-        <section id='marketplace'></section>
-        <h2 id='' className="h1 fw-bold text-dark ">Market Place</h2>
-      <div className="row g-4">
-        {props.updates.map((item, index) => (
-          <div key={index} className="col-md-6 col-lg-4">
-            <UpdateCard
-              image={item.image}
-              date={item.date}
-              title={item.title}
-              description={item.description}
-              leadTime={item.leadTime}
-              regions={item.regions}
+      <div className="page-layout">
+
+      {/* ================= LEFT CONTENT ================= */}
+      <div className="content-area">
+
+        {/* ROW 1 */}
+        <div className="expand-row">
+          <div className="flex-card">
+            <img
+              src={featurearticle}
+              alt="Featured Articles"
+              className="card-main-img"
             />
+
+            <div className="card-hover-content">
+              {props.contentCards?.map((card, index) => (
+                <div key={index} className="hover-item">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="hover-thumb"
+                  />
+                  <div className="hover-text">
+                    <h6>{card.title}</h6>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: card.description,
+                      }}
+                    />
+                    <a
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-danger btn-sm"
+                    >
+                      {card.buttonText || "Read more"}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-      </div>
-    </div>
-    </div>
-    </div>
+
+          <div className="flex-card">
+            <img
+              src="https://tse1.explicit.bing.net/th/id/OIP.01PjhutC0AMvZ1g9OtTqZwHaE8"
+              alt="Card 2"
+              className="card-main-img"
+            />
+            <div className="card-hover-content">
+              {props.contentCards?.map((card, index) => (
+                <div key={index} className="hover-item">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="hover-thumb"
+                  />
+                  <div className="hover-text">
+                    <h6>{card.title}</h6>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: card.description,
+                      }}
+                    />
+                    <a
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-danger btn-sm"
+                    >
+                      {card.buttonText || "Read more"}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        
-        {/* Right Sidebar Ad */}
-        <RightSidebarAd sponsorAds={props.sponsorAds} />
+
+        {/* ROW 2 */}
+        <div className="expand-row mt-4">
+          <div className="flex-card">
+            <img
+              src={happenopenings}
+              alt="Card 3"
+              className="card-main-img"
+            />
+            <div className="card-hover-content">
+              {props.contentCards?.map((card, index) => (
+                <div key={index} className="hover-item">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="hover-thumb"
+                  />
+                  <div className="hover-text">
+                    <h6>{card.title}</h6>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: card.description,
+                      }}
+                    />
+                    <a
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-danger btn-sm"
+                    >
+                      {card.buttonText || "Read more"}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex-card">
+            <img
+              src={ad_4}
+              alt="Card 4"
+              className="card-main-img"
+            />
+            <div className="card-hover-content">
+              {props.contentCards?.map((card, index) => (
+                <div key={index} className="hover-item">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="hover-thumb"
+                  />
+                  <div className="hover-text">
+                    <h6>{card.title}</h6>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: card.description,
+                      }}
+                    />
+                    <a
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-danger btn-sm"
+                    >
+                      {card.buttonText || "Read more"}
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      {/* ================= RIGHT SIDEBAR ================= */}
+      <aside className="sidebar-area">
+        <RightSidebarAd sponsorAds={props.sponsorAds} />
+      </aside>
+
+    </div>
+
       
     </div>
     <FooterComponent adFooterUrl={props.adFooterUrl} adFooterImg={props.adFooterImg}/>

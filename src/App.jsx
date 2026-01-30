@@ -68,7 +68,7 @@ const sampleData = {
       description: "Fastest Shanghai delivery"
     }
   ],
-  // 👇 NEW: Single array replaces 3 components!
+  
   contentCards: [
     {
       image: portcontetn,
@@ -79,19 +79,19 @@ const sampleData = {
       url: "https://www.linkedin.com/pulse/importance-port-call-optimization-jon-arnup-l1ixc/?trackingId=bCnJoUFqQoGwOzuENqhclw%3D%3D",
       buttonText: "Read More"
     },
-    {
-      image: "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png",
-      title: "Trentgo",
-      description: "UK Stocked • Global Shipping • Crane Parts",
-      url: "#",
-      buttonText: "Visit Sponsor",
-      isAd: true,
-      adImages: [
-      "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
-      "https://www.trentgo.com/wp-content/uploads/2025/04/depositphotos_194997996-stock-photo-car-tires-on-white-1-4.png", 
-      "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png"
-    ],
-    },
+    // {
+    //   image: "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png",
+    //   title: "Trentgo",
+    //   description: "UK Stocked • Global Shipping • Crane Parts",
+    //   url: "#",
+    //   buttonText: "Visit Sponsor",
+    //   isAd: true,
+    //   adImages: [
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/depositphotos_194997996-stock-photo-car-tires-on-white-1-4.png", 
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png"
+    // ],
+    // },
     {
       image: imp,
       // badge: "INSIGHT",
@@ -112,19 +112,19 @@ const sampleData = {
       url: "https://www.linkedin.com/pulse/container-volumes-system-readiness-jon-arnup-e8lec/?trackingId=RAUpYAHxQgWW68TnCNeQJg%3D%3D",
       buttonText: "Read More"
     },
-    {
-      image: "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
-      title: "Trentgo",
-      description: "Steel castings • 24/7 dispatch • Worldwide shipping",
-      url: "#",
-      buttonText: "Get Quote",
-      isAd: true , // 👈 Another AD,
-      adImages: [
-      "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
-      "https://www.trentgo.com/wp-content/uploads/2025/04/depositphotos_194997996-stock-photo-car-tires-on-white-1-4.png", 
-      "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png"
-    ],
-    },
+    // {
+    //   image: "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
+    //   title: "Trentgo",
+    //   description: "Steel castings • 24/7 dispatch • Worldwide shipping",
+    //   url: "#",
+    //   buttonText: "Get Quote",
+    //   isAd: true , // 👈 Another AD,
+    //   adImages: [
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/drive-module.jpg",
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/depositphotos_194997996-stock-photo-car-tires-on-white-1-4.png", 
+    //   "https://www.trentgo.com/wp-content/uploads/2025/04/Tires.png"
+    // ],
+    // },
     {
       image: port_2,
       title: "Port Procurement Needs a Reset",

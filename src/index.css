@@ -1,56 +1,349 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
-.trentgo-search-sm {
-  width: 220px;   /* small & clean */
-}
-/* Bigger sponsor image */
-.sponsor-img-lg {
-  width: 100%;
-  height: 120px;   /* increased */
-  object-fit: cover;
-}
+/* ============================= */
+/* PAGE LAYOUT */
+/* ============================= */
 
-/* Bigger placeholder */
-.sponsor-placeholder-lg {
-  height: 120px;
-  background: linear-gradient(135deg, #6c757d, #495057);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 6px;
+.page-layout {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 6px;
+  width: 100%;
+  gap: 16px;
+  align-items: stretch; /* 🔥 sidebar height = content height */
 }
 
-/* Hover effect (keep same) */
-.sponsor-card {
-  transition: all 0.25s ease;
-  border: 1px solid #e9ecef;
+.content-area {
+  flex: 1;
+  min-width: 0; /* 🔥 flex overflow fix */
 }
 
-.sponsor-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  background: #ffffff;
+.sidebar-area {
+  width: 280px;
+  flex-shrink: 0;
+  margin-left: auto; /* 🔥 push sidebar to right end */
 }
-.sponsor-img-full {
-  width: 100% !important;   /* FULL card width */
-  height: 130px;            /* balanced height */
+
+/* ============================= */
+/* EXPAND ROW */
+/* ============================= */
+
+.expand-row {
+  display: flex;
+  gap: 20px;
+  height: 320px;
+}
+
+/* shrink other cards */
+.expand-row:hover .flex-card:not(:hover) {
+  flex: 0.8;
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* BASE EXPAND CARD */
+/* ============================= */
+
+.flex-card {
+  flex: 1;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.45s ease, transform 0.45s ease;
+}
+
+/* all shrink slightly */
+.expand-row:hover .flex-card {
+  flex: 0.85;
+}
+
+/* hovered card expands */
+.expand-row .flex-card:hover {
+  flex: 2.2;
+}
+
+/* ============================= */
+/* MAIN IMAGE */
+/* ============================= */
+
+.card-main-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
 }
 
-/* Keep hover effect */
-.sponsor-card {
-  transition: all 0.25s ease;
-  border: 1px solid #e9ecef;
+/* image moves right on hover */
+.flex-card:hover .card-main-img {
+  transform: translateX(30%);
 }
 
-.sponsor-card:hover {
+/* ============================= */
+/* LEFT EXPAND CONTENT */
+/* ============================= */
+
+.card-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: #2dbdd4;
+  padding: 16px;
+  overflow-y: auto;
+
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 2;
+}
+
+/* show content on hover */
+.flex-card:hover .card-hover-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================= */
+/* HOVER LIST ITEM */
+/* ============================= */
+
+.hover-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.hover-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.hover-text h6 {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.hover-text p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar-card-wrapper {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.sidebar-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 🔥 match main content height */
+}
+
+.sidebar-header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  color: #666;
+}
+
+.sidebar-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  flex: 1;              /* 🔥 fill height */
+  overflow-y: auto;
+}
+
+/* sponsor ad link */
+.sidebar-ad-link {
+  display: block;
+}
+
+/* sponsor image */
+.sidebar-ad-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sidebar-ad-img:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: fill;
+  border-radius: 6px;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.header-search input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.header-search button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.header-nav a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.header-nav a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* ============================= */
+/* YOUTUBE STYLE PILLS */
+/* ============================= */
+
+.yt-pill-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.yt-pill-scroll {
+  display: flex;
+  gap: 10px;
+  padding: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.yt-pill-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.yt-pill {
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.yt-pill:hover {
+  background: rgba(0,0,0,0.55);
+}
+
+.yt-pill.active {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 991px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-card-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expand-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flex-card,
+  .expand-row:hover .flex-card,
+  .flex-card:hover {
+    flex: unset;
+    min-height: 320px;
+  }
+
+  .card-hover-content {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+    padding: 12px;
+  }
+
+  .flex-card:hover .card-main-img {
+    transform: none;
+  }
+
+  .header-search {
+    display: none;
+  }
+}
+/* Hide image completely when hover */
+.flex-card:hover .card-main-img {
+  opacity: 0;
+  transform: scale(1.05);
+}
+.card-hover-content {
+  position: absolute;
+  inset: 0;                
+  width: 100%;
+  height: 100%;
+  background: #94e7fc;
+  padding: 18px;
+  overflow-y: auto;
+
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 3;
+}
+.flex-card:hover .card-hover-content {
+  opacity: 1;
+  transform: scale(1);
+}
+@media (max-width: 768px) {
+  .card-main-img {
+    display: none;
+  }
+
+  .card-hover-content {
+    position: relative;
+    opacity: 1;
+    transform: none;
+  }
+}
