@@ -12,7 +12,8 @@ import FooterComponent from '../components/footercomponent';
 import UpdateCard from '../components/updatecard';
 import  featurearticle from'../assets/image/content-card/featured article.jpg';
 import ad_4 from '../assets/image/ad-4.png';
-import happenopenings from '../assets/image/content-card/happenings.jpg'
+import happenopenings from '../assets/image/content-card/trentgo happenings.jpg';
+import marketindex from '../assets/image/content-card/marketindex.jpg'
 const TrentGONewsletter = (props) => {
   return (
     <div className="">
@@ -70,7 +71,7 @@ const TrentGONewsletter = (props) => {
 
           <div className="flex-card">
             <img
-              src="https://tse1.explicit.bing.net/th/id/OIP.01PjhutC0AMvZ1g9OtTqZwHaE8"
+              src={marketindex}
               alt="Card 2"
               className="card-main-img"
             />
