@@ -117,7 +117,7 @@ const TrentGONewsletter = (props) => {
 
   <div className="new-card-hover-content" style={{ backgroundImage: `url(${happenopenings})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="hover-text">
-      <h6 id='happenings'>Happeings</h6>
+      <h6 id='happenings'>TrentGO Updates</h6>
       {/* <p>Card description content goes here.</p> */}
       <a
         href="https://www.trentgo.com/news/"

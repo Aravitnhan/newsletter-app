@@ -81,7 +81,7 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
           <p className="text-muted small mb-3">
             Reach port & terminal spare-parts buyers worldwide
           </p>
-          <a href="mailto:ads@trentgo.com" className="btn btn-outline-primary btn-sm fw-bold px-3 py-1 mb-2">
+          <a id="emailid" href="mailto:ads@trentgo.com" className="btn btn-outline-primary btn-sm fw-bold px-3 py-1 mb-2">
             ads@trentgo.com
           </a>
           <div className="d-flex flex-column gap-2 small mt-3">
