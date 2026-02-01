@@ -143,7 +143,7 @@ const sampleData = {
       description: `
         Copper futures dropped more than 3% to around $6 per pound on Friday, reversing a sharp rally from the previous session amid a broad retreat across the metals complex.
       `,
-      url: "https://www.linkedin.com/pulse/importance-port-call-optimization-jon-arnup-l1ixc/?trackingId=bCnJoUFqQoGwOzuENqhclw%3D%3D",
+      url: "https://tradingeconomics.com/commodity/copper",
       buttonText: "Read More"
     },
      {
@@ -152,7 +152,7 @@ const sampleData = {
       description: `
         Steel rebar futures in China fell to CNY 3,100 per tonne after testing five-month highs of CNY 3,160 on January 29th, pressured by the recent decline in industrial metals as markets reconsidered speculative trades.
       `,
-      url: "https://www.linkedin.com/pulse/importance-port-call-optimization-jon-arnup-l1ixc/?trackingId=bCnJoUFqQoGwOzuENqhclw%3D%3D",
+      url: "https://tradingeconomics.com/commodity/steel",
       buttonText: "Read More"
     },
     {
@@ -161,7 +161,7 @@ const sampleData = {
       description: `
        Aluminum futures in the UK fell to $3,100 per tonne, retreating sharply from the over three-year high of $3,270 on January 28th and tracking the aggressive pullback for base metals as traders reconsidered their speculative positions.
       `,
-      url: "https://www.linkedin.com/pulse/importance-port-call-optimization-jon-arnup-l1ixc/?trackingId=bCnJoUFqQoGwOzuENqhclw%3D%3D",
+      url: "https://tradingeconomics.com/commodity/aluminum",
       buttonText: "Read More"
     },
   ],
