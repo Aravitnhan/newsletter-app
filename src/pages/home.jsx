@@ -10,11 +10,11 @@ import TopLeaderboardAd from '../components/topLeaderBoard';
 import ContentCards from '../components/contentcards';
 import FooterComponent from '../components/footercomponent';
 import UpdateCard from '../components/updatecard';
-import  featurearticle from'../assets/image/content-card/featured article.jpg';
+import  featurearticle from'../assets/image/content-card/Creative.png';
 import ad_4 from '../assets/image/ad-4.png';
 import hesai from '../assets/image/content-card/hesai.png'
 import happenopenings from '../assets/image/content-card/TG happnings.png';
-import marketindex from '../assets/image/content-card/marketindex.jpg'
+import marketindex from '../assets/image/content-card/market index.png'
 const TrentGONewsletter = (props) => {
   return (
     <div className="">
@@ -107,8 +107,8 @@ const TrentGONewsletter = (props) => {
         </div>
 
         {/* ROW 2 */}
-        <div className="expand-row mt-4">
-  <div className="flex-card">
+  <div className="expand-row mt-4">
+  <div className="flex-card" >
   <img
     src={happenopenings}
     alt="Featured"

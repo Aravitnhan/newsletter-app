@@ -51,6 +51,7 @@ a {
   overflow: hidden;
   cursor: pointer;
   transition: flex 0.45s ease, transform 0.45s ease;
+  border: 2px solid var(--tg-dark);
 }
 
 /* all shrink slightly */
@@ -705,8 +706,8 @@ a {
   --tg-primary: #00b4d8;      /* main blue */
   --tg-primary-soft: #94e7fc; /* light cyan */
   --tg-dark: #0a2540;         /* dark navy */
-  --tg-text-dark: #0f172a;
-  --tg-text-muted: #64748b;
+  --tg-text-dark: #0a2540;
+  --tg-text-muted: #94e7fc;
 
   /* UI */
   --tg-bg: #f8fafc;
