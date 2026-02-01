@@ -9,12 +9,12 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
         <div className="col-12">
           <div className="mb-4">
                  <div className="border shadow-sm rounded-3">
-                   <div className="card-header bg-light border-bottom py-2 px-3">
-                     <small className="text-muted text-uppercase fw-bold tracking-wide">
+                   <div className="bg-light border-bottom py-2 px-3">
+                     {/* <small className="text-muted text-uppercase fw-bold tracking-wide">
                        Sponsored Leaderboard
-                     </small>
+                     </small> */}
                    </div>
-                   <div className="card-body p-2 text-center">
+                   <div className="p-2 text-center">
                      <a 
                       //  href={adUrl} 
                        target="_blank" 

@@ -12,7 +12,7 @@ import FooterComponent from '../components/footercomponent';
 import UpdateCard from '../components/updatecard';
 import  featurearticle from'../assets/image/content-card/featured article.jpg';
 import ad_4 from '../assets/image/ad-4.png';
-import happenopenings from '../assets/image/content-card/trentgo happenings.jpg';
+import happenopenings from '../assets/image/content-card/trengohappenings.jpg';
 import marketindex from '../assets/image/content-card/marketindex.jpg'
 const TrentGONewsletter = (props) => {
   return (
@@ -107,76 +107,60 @@ const TrentGONewsletter = (props) => {
 
         {/* ROW 2 */}
         <div className="expand-row mt-4">
-          <div className="flex-card">
-            <img
-              src={happenopenings}
-              alt="Card 3"
-              className="card-main-img"
-            />
-            <div className="card-hover-content">
-              {props.contentCards?.map((card, index) => (
-                <div key={index} className="hover-item">
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="hover-thumb"
-                  />
-                  <div className="hover-text">
-                    <h6>{card.title}</h6>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: card.description,
-                      }}
-                    />
-                    <a
-                      href={card.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-danger btn-sm"
-                    >
-                      {card.buttonText || "Read more"}
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+  <div className="flex-card">
+  <img
+    src={happenopenings}
+    alt="Featured"
+    className="card-main-img"
+  />
 
-          <div className="flex-card">
-            <img
+  <div className="new-card-hover-content" style={{ backgroundImage: `url(${happenopenings})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="hover-text">
+      <h6>Happeings</h6>
+      {/* <p>Card description content goes here.</p> */}
+      <a
+        href="https://www.trentgo.com/news/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-danger btn-sm"
+      >
+        Read more
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <div className="flex-card">
+     <img
               src={ad_4}
-              alt="Card 4"
+              alt="Featured Articles"
               className="card-main-img"
             />
-            <div className="card-hover-content">
-              {props.contentCards?.map((card, index) => (
-                <div key={index} className="hover-item">
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="hover-thumb"
-                  />
-                  <div className="hover-text">
-                    <h6>{card.title}</h6>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: card.description,
-                      }}
-                    />
-                    <a
-                      href={card.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-danger btn-sm"
-                    >
-                      {card.buttonText || "Read more"}
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+    <div 
+      className="new-card-hover-content"
+      style={{ backgroundImage: `url(${ad_4})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      <div className="hover-item">
+        <div className="hover-text">
+          <h6>Hesai</h6>
+          <p>Advanced LiDAR sensors used in ADAS, autonomous vehicles, and robotics</p>
+          <a
+            href="https://www.hesaitech.com"
+            target="_blank"
+            className="btn btn-danger btn-sm"
+          >
+            {"Read More ->"}
+          </a>
         </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+
+
+
 
       </div>
 

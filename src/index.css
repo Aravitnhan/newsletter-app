@@ -19,7 +19,10 @@
   flex-shrink: 0;
   margin-left: auto; /* 🔥 push sidebar to right end */
 }
-
+a {
+  position: relative;
+  z-index: 5;
+}
 /* ============================= */
 /* EXPAND ROW */
 /* ============================= */
@@ -326,7 +329,6 @@
   background: #94e7fc;
   padding: 18px;
   overflow-y: auto;
-
   opacity: 0;
   transform: scale(0.96);
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -347,3 +349,514 @@
     transform: none;
   }
 }
+.new-card-hover-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay for text visibility */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  transform: translateY(100%); /* Content is initially hidden */
+}
+
+.flex-card:hover .new-card-hover-content {
+  transform: translateY(0); /* Content slides up on hover */
+}
+
+.new-card-hover-content .hover-text h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.new-card-hover-content .hover-text p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.new-card-hover-content .btn {
+  background-color: #e50914;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.new-card-hover-content .btn:hover {
+  background-color: #ff1f27;
+}
+.flex-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Main Image */
+.card-main-img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Slight zoom for premium feel */
+.flex-card:hover .card-main-img {
+  transform: scale(1.08);
+}
+
+/* Hover overlay */
+.new-card-hover-content {
+  position: absolute;
+  inset: 0; /* top right bottom left = 0 */
+  background: rgba(0,0,0,0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #fff;
+  padding: 20px;
+
+  transform: translateY(100%);
+  transition: transform 0.45s ease;
+}
+
+/* Slide Up */
+.flex-card:hover .new-card-hover-content {
+  transform: translateY(0);
+}
+.new-card-hover-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;   /* bottom */
+  align-items: flex-start;     /* left */
+  padding: 20px;
+}
+
+.hover-text{
+  text-align: left;
+}
+.modern-header{
+  background:#fff;
+  border-bottom:1px solid #e8e8e8;
+  padding:14px 32px;
+}
+
+/* TOP */
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* LEFT */
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.header-logo{
+  height:46px;
+}
+
+.title-wrap h5{
+  margin:0;
+  font-weight:700;
+}
+
+.title-wrap span{
+  font-size:13px;
+  color:#777;
+}
+
+/* SEARCH */
+.header-search{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.header-search input{
+  width:420px;
+  background:#f3f3f3;
+  border:none;
+  padding:10px 16px;
+  border-radius:12px;
+  outline:none;
+}
+
+/* RIGHT */
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.subscribe-btn{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:8px 16px;
+  border-radius:10px;
+  font-weight:600;
+}
+
+.header-right a{
+  font-size:20px;
+  color:#111;
+}
+
+/* TABS */
+.header-tabs{
+  margin-top:16px;
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+}
+
+.header-tabs button{
+  border:none;
+  background:#f2f2f2;
+  padding:8px 14px;
+  border-radius:20px;
+  font-weight:500;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.header-tabs button:hover{
+  background:#e4e4e4;
+}
+.modern-header{
+  background:#fff;
+  border-bottom:1px solid #e8e8e8;
+  padding:10px 32px 18px;
+}
+
+/* NAV TABS TOP */
+.header-tabs{
+  display:flex;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.header-tabs button{
+  border:none;
+  background:#f2f2f2;
+  padding:7px 14px;
+  border-radius:20px;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.header-tabs button:hover{
+  background:#e6e6e6;
+}
+
+/* SECOND ROW */
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LEFT */
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.header-logo{
+  height:46px;
+}
+
+/* GIF */
+.header-gif{
+  height:38px;
+  width:auto;
+}
+
+/* SEARCH */
+.header-search{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.header-search input{
+  width:420px;
+  background:#f4f4f4;
+  border:none;
+  padding:10px 16px;
+  border-radius:12px;
+  outline:none;
+}
+
+/* BUTTON */
+.subscribe-btn{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:9px 18px;
+  border-radius:10px;
+  font-weight:600;
+}
+.modern-header{
+  background:#fff;
+  border-bottom:1px solid #e8e8e8;
+  padding:12px 28px;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LEFT SIDE */
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+/* NAV */
+.header-nav{
+  display:flex;
+  gap:18px;
+  margin-left:10px;
+}
+
+.header-nav a{
+  text-decoration:none;
+  color:#222;
+  font-weight:500;
+  font-size:15px;
+}
+
+.header-nav a:hover{
+  color:#000;
+}
+
+/* GIF */
+.header-gif{
+  height:34px;
+}
+
+/* SEARCH + BTN */
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.header-search input{
+  width:260px;
+  background:#f3f3f3;
+  border:none;
+  padding:9px 14px;
+  border-radius:10px;
+  outline:none;
+}
+
+.subscribe-btn{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:8px 16px;
+  border-radius:10px;
+  font-weight:600;
+}
+.header-gif{
+  height:32px;
+  width:auto;
+}
+.title-wrap{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.main-title{
+  margin:0;
+  font-size:16px;
+  font-weight:700;
+}
+
+.sub-title{
+  font-size:12px;
+  color:#777;
+  white-space:nowrap; /* prevents breaking */
+}
+:root {
+  /* Primary TrentGO colors */
+  --tg-primary: #00b4d8;      /* main blue */
+  --tg-primary-soft: #94e7fc; /* light cyan */
+  --tg-dark: #0a2540;         /* dark navy */
+  --tg-text-dark: #0f172a;
+  --tg-text-muted: #64748b;
+
+  /* UI */
+  --tg-bg: #f8fafc;
+  --tg-card-bg: #ffffff;
+  --tg-border: #e2e8f0;
+  --tg-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+body {
+  background: var(--tg-bg);
+  color: var(--tg-text-dark);
+}
+.card-hover-content {
+  background: linear-gradient(
+    135deg,
+    var(--tg-primary),
+    var(--tg-primary-soft)
+  );
+  color: #fff;
+}
+.hover-text h6 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hover-text p {
+  color: rgba(255,255,255,0.9);
+}
+.hover-text .btn,
+.subscribe-btn {
+  background: var(--tg-dark);
+  color: #fff;
+  border: none;
+}
+
+.hover-text .btn:hover,
+.subscribe-btn:hover {
+  background: #020617;
+}
+.hover-text h6 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hover-text p {
+  color: rgba(255,255,255,0.9);
+}
+.modern-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--tg-border);
+}
+
+.header-nav a {
+  color: var(--tg-text-muted);
+}
+
+.header-nav a:hover {
+  color: var(--tg-primary);
+  border-bottom-color: var(--tg-primary);
+}
+.yt-pill {
+  background: #e0f7ff;
+  color: var(--tg-dark);
+}
+
+.yt-pill:hover {
+  background: #c8f1ff;
+}
+
+.yt-pill.active {
+  background: var(--tg-primary);
+  color: #fff;
+}
+.sidebar-card {
+  background: var(--tg-card-bg);
+  box-shadow: var(--tg-shadow);
+}
+
+.sidebar-header {
+  color: var(--tg-text-muted);
+}
+/* ============================= */
+/* TRENTGO FOOTER THEME */
+/* ============================= */
+
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--tg-border);
+}
+
+/* Headings */
+footer h5,
+footer h6 {
+  color: var(--tg-text-dark);
+  font-weight: 700;
+}
+
+/* Text */
+footer p,
+footer small,
+footer li {
+  color: var(--tg-text-muted);
+}
+
+/* Links */
+footer a {
+  color: var(--tg-primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--tg-dark);
+  text-decoration: underline;
+}
+
+/* Footer Ad Card */
+footer .card {
+  border-radius: 12px;
+  box-shadow: var(--tg-shadow);
+  overflow: hidden;
+}
+
+/* Video Ad */
+footer video {
+  border-radius: 10px;
+}
+
+/* Social Icons */
+footer .bi {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer .bi:hover {
+  transform: translateY(-2px);
+  color: var(--tg-dark);
+}
+
+/* Newsletter Input */
+footer .input-group .form-control {
+  border-radius: 8px 0 0 8px;
+  border-color: var(--tg-border);
+}
+
+footer .input-group .btn {
+  border-radius: 0 8px 8px 0;
+  background: var(--tg-primary);
+  border: none;
+  font-weight: 600;
+}
+
+footer .input-group .btn:hover {
+  background: var(--tg-dark);
+}
+
+/* Bottom Copyright */
+footer .border-top {
+  border-color: var(--tg-border) !important;
+}
+

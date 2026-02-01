@@ -4,9 +4,9 @@ const TopLeaderboardAd = ({ adUrl, adVideo }) => (
   <div className="mb-4">
     <div className="border shadow-sm rounded-3">
       <div className="card-header bg-light border-bottom ">
-        <small className="text-muted text-uppercase fw-bold tracking-wide">
+        {/* <small className="text-muted text-uppercase fw-bold tracking-wide">
           Sponsored Leaderboard
-        </small>
+        </small> */}
       </div>
       <div className="card-body text-center">
         <a 
