@@ -22,7 +22,7 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
         <a href="#">Featured Articles</a>
         <a href="#">Market Index</a>
         <a href="#happenings">Updates</a>
-         <a href="#sponser">Supplier</a>
+         <a href="#sponser">Sponsor Supplier</a>
         {/* <a href="#emailid">Advertise</a> */}
       </nav>
 
