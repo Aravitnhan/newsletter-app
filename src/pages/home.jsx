@@ -12,7 +12,8 @@ import FooterComponent from '../components/footercomponent';
 import UpdateCard from '../components/updatecard';
 import  featurearticle from'../assets/image/content-card/featured article.jpg';
 import ad_4 from '../assets/image/ad-4.png';
-import happenopenings from '../assets/image/content-card/trengohappenings.jpg';
+import hesai from '../assets/image/content-card/hesai.png'
+import happenopenings from '../assets/image/content-card/TG happnings.png';
 import marketindex from '../assets/image/content-card/marketindex.jpg'
 const TrentGONewsletter = (props) => {
   return (
@@ -116,7 +117,7 @@ const TrentGONewsletter = (props) => {
 
   <div className="new-card-hover-content" style={{ backgroundImage: `url(${happenopenings})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="hover-text">
-      <h6>Happeings</h6>
+      <h6 id='happenings'>Happeings</h6>
       {/* <p>Card description content goes here.</p> */}
       <a
         href="https://www.trentgo.com/news/"
@@ -133,13 +134,13 @@ const TrentGONewsletter = (props) => {
 
   <div className="flex-card">
      <img
-              src={ad_4}
+              src={hesai}
               alt="Featured Articles"
               className="card-main-img"
             />
     <div 
       className="new-card-hover-content"
-      style={{ backgroundImage: `url(${ad_4})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ backgroundImage: `url(${hesai})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="hover-item">
         <div className="hover-text">

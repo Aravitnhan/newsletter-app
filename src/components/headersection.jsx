@@ -19,11 +19,10 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
       <img src={''} alt="gif" className="header-gif" />
 
       <nav className="header-nav">
-        <a href="#">Marketplace</a>
         <a href="#">Featured Articles</a>
-        <a href="#">Delivered Orders</a>
-        <a href="#">Pricing</a>
-        <a href="#">Advertise</a>
+        <a href="#">Market Index</a>
+        <a href="#happenings">Happenings</a>
+        <a href="##emailid">Advertise</a>
       </nav>
 
     </div>
@@ -32,7 +31,7 @@ const HeaderSection = ({ navUrls, logoSrc, socialUrls }) => (
     <div className="header-right">
       <input
         className="header-search"
-        placeholder="Search spare parts..."
+        placeholder="Search"
       />
       <button className="subscribe-btn">Subscribe</button>
     </div>

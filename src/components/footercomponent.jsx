@@ -57,7 +57,7 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
               Connecting global buyers with verified suppliers.
             </p>
             <div className="d-flex gap-2 small">
-              <a href="mailto:info@trentgo.com" className="text-primary text-decoration-none">info@trentgo.com</a>
+              <a id="emailid" href="mailto:info@trentgo.com" className="text-primary text-decoration-none">info@trentgo.com</a>
               <span>|</span>
               <a href="tel:+1-555-123-4567" className="text-primary text-decoration-none">+1-555-123-4567</a>
             </div>

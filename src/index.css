@@ -727,12 +727,12 @@ body {
   color: #fff;
 }
 .hover-text h6 {
-  color: #ffffff;
+  color: #020617;
   font-weight: 700;
 }
 
 .hover-text p {
-  color: rgba(255,255,255,0.9);
+  color: #020617;
 }
 .hover-text .btn,
 .subscribe-btn {
@@ -746,12 +746,12 @@ body {
   background: #020617;
 }
 .hover-text h6 {
-  color: #ffffff;
+  color: #020617;
   font-weight: 700;
 }
 
 .hover-text p {
-  color: rgba(255,255,255,0.9);
+  color: #020617;
 }
 .modern-header {
   background: #ffffff;
@@ -1259,6 +1259,31 @@ body {
   }
 
   .header-nav {
-    flex-wrap: wrap;   /* 🔥 wrap instead of scroll */
+    flex-wrap: wrap;   
   }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main-title,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+:root {
+  --tg-font: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+  font-family: var(--tg-font);
 }
