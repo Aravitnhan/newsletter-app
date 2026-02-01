@@ -1,15 +1,15 @@
 import React from "react";
 import videos from '../assets/videos/generated_video.mp4'
 const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
-  <footer className="bg-white border-top border-light mt-5 pt-4">
-    <div className="container-fluid px-3 px-lg-4">
+  <footer className="bg-white border-top border-light ">
+    <div className="container-fluid ">
       
       {/* Footer Ad Banner */}
-      <div className="row mb-2">
+      <div className="row ">
         <div className="col-12">
-          <div className="mb-4">
-                 <div className="border shadow-sm rounded-3">
-                   <div className="bg-light border-bottom py-2 px-3">
+          <div className="">
+                 <div className="">
+                   <div className=" ">
                      {/* <small className="text-muted text-uppercase fw-bold tracking-wide">
                        Sponsored Leaderboard
                      </small> */}
@@ -68,10 +68,10 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
         <div className="col-lg-2 col-md-6">
           <h6 className="fw-bold text-dark mb-3">Quick Links</h6>
           <ul className="list-unstyled small">
-            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Marketplace</a></li>
-            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Intelligence</a></li>
-            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Price Outlook</a></li>
-            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Delivered Orders</a></li>
+            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Featured Articles</a></li>
+            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Market Index</a></li>
+            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Updates</a></li>
+            <li className="mb-2"><a href="#" className="text-muted text-decoration-none">Supplier</a></li>
           </ul>
         </div>
 

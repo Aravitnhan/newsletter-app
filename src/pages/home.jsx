@@ -77,7 +77,7 @@ const TrentGONewsletter = (props) => {
               className="card-main-img"
             />
             <div className="card-hover-content">
-              {props.contentCards?.map((card, index) => (
+              {props.marketIndex?.map((card, index) => (
                 <div key={index} className="hover-item">
                   <img
                     src={card.image}
