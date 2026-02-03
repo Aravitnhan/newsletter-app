@@ -3,7 +3,7 @@ import videos from '../assets/videos/generated_video.mp4'
 const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
   <footer className="bg-white border-top border-light ">
     <div className="container-fluid ">
-      
+
       {/* Footer Ad Banner */}
       <div className="row ">
         <div className="col-12">
@@ -15,19 +15,19 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
                      </small> */}
                    </div>
                    <div className="p-2 text-center">
-                     <a 
-                      //  href={adUrl} 
-                       target="_blank" 
+                     <a
+                      //  href={adUrl}
+                       target="_blank"
                        rel="noopener noreferrer"
                        className="stretched-link text-decoration-none d-block w-100"
                      >
-                       <video 
-                         src={videos} 
-                         className="img-fluid rounded-2 w-100 border-0" 
-                         style={{ 
-                           width: '100%',          
-                           height: '150px',        
-                           objectFit: 'cover'      
+                       <video
+                         src={videos}
+                         className="img-fluid rounded-2 w-100 border-0"
+                         style={{
+                           width: '100%',
+                           height: '150px',
+                           objectFit: 'cover'
                          }}
                          muted
                          autoPlay
@@ -47,13 +47,13 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
 
       {/* Footer Content */}
       <div className="row g-4 pb-4">
-        
+
         {/* Company Info */}
         <div className="col-lg-4 col-md-6">
           <div>
             <h5 className="fw-bold text-dark mb-3">TRENTGO</h5>
             <p className="text-muted small mb-3">
-              Marketplace Intelligence for Port Spare Parts. 
+              Marketplace Intelligence for Port Spare Parts.
               Connecting global buyers with verified suppliers.
             </p>
             <div className="d-flex gap-2 small">
@@ -94,7 +94,7 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
         {/* Social Media + Newsletter */}
         <div className="col-lg-3 col-md-6">
           <h6 className="fw-bold text-dark mb-3">Follow Us</h6>
-          
+
           {/* Social Media Icons */}
           <div className="d-flex gap-3 mb-4">
             <a href="https://linkedin.com/company/trentgo" target="_blank" rel="noopener noreferrer" className="text-primary">
@@ -114,9 +114,9 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
             Monthly marketplace intelligence delivered to your inbox
           </p>
           <div className="input-group input-group-sm mb-3">
-            <input 
-              type="email" 
-              className="form-control" 
+            <input
+              type="email"
+              className="form-control"
               placeholder="your@email.com"
               aria-label="Email for newsletter"
             />
@@ -133,7 +133,7 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
       <div className="border-top border-light pt-3 pb-4">
         <div className="row align-items-center">
           <div className="col-md-6 small text-muted">
-            © 2026 TrentGO. All rights reserved.
+            © {new Date().getFullYear()-1} TrentGO. All rights reserved.
           </div>
           <div className="col-md-6 text-md-end small">
             <a href="#" className="text-muted text-decoration-none me-3">Privacy</a>
@@ -144,6 +144,6 @@ const FooterComponent = ({ adFooterUrl, adFooterImg }) => (
       </div>
     </div>
   </footer>
-);
+)
 
 export default FooterComponent;
