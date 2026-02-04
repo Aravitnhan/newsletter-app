@@ -1223,7 +1223,7 @@ img {
 }
   .flex-card {
     min-height: 200px;
-    /* max-height: 200px; */
+    max-height: none;
     height: 284px;
   }
   /* Remove flex behavior that causes gaps */
