@@ -29,7 +29,7 @@ const HeaderSection = ({ logoSrc }) => {
           <div className="navBar-container desktop-only">
             <nav className="header-nav">
               <a href="#">Featured Articles</a>
-              <a href="#">Market Index</a>
+              <a href="#">Pricing Outlook</a>
               <a href="#happenings">Updates</a>
               <a href="#sponser">Sponsor Supplier</a>
             </nav>
