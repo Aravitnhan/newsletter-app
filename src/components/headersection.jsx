@@ -31,7 +31,7 @@ const HeaderSection = ({ logoSrc }) => {
               <a href="#">Featured Articles</a>
               <a href="#">Pricing Outlook</a>
               <a href="#happenings">Updates</a>
-              <a href="#sponser">Sponsor Supplier</a>
+              <a href="#sponser">Featured Supplier</a>
             </nav>
           </div>
 
