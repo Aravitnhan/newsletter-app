@@ -42,11 +42,12 @@ const TrentGONewsletter = (props) => {
                   alt="Featured"
                   className="card-main-img"
                 />
-
+               
                 <div className="new-card-hover-content" style={{ backgroundImage: `url(${happenopenings})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                   <div className="hover-text">
-                    <h6 id='happenings'>TrentGO Updates</h6>
-                    {/* <p>Card description content goes here.</p> */}
+                    <div className="hover-item">
+                     <h6 id='happenings'>TrentGO Updates</h6>
+                    <p>Checkout the latest update of TrentGo.</p>
                     <a
                       href="https://www.trentgo.com/news/"
                       target="_blank"
@@ -55,6 +56,8 @@ const TrentGONewsletter = (props) => {
                     >
                       Read more
                     </a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
