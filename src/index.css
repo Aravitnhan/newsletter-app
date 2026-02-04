@@ -1252,6 +1252,9 @@ img {
 
   .flex-card{
     max-height: none;
-    height: 264px;
+    height: 224px;
+  }
+  .sidebar-body{
+    height: 150px;
   }
 }
