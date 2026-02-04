@@ -1248,3 +1248,10 @@ img {
   }
 }
 
+/* @media (min-width: 1280px) and (max-width: 1599px) {
+
+  .flex-card{
+    max-height: none;
+    height: 4oo;
+  }
+} */
