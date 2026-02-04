@@ -775,8 +775,8 @@ footer .border-top {
 
   .flex-card {
     min-height: 200px;
-    /* max-height: 200px; */
-    height: 284px;
+    max-height: 200px;
+    height: 200px;
   }
 
   .navBar-container {
@@ -1216,6 +1216,11 @@ img {
     margin: 0 auto;
   }
 
+  .flex-card {
+    min-height: 200px;
+    /* max-height: 200px; */
+    height: 284px;
+  }
   /* Remove flex behavior that causes gaps */
   .content-area {
     width: 100%;
