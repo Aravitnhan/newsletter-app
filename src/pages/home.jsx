@@ -14,7 +14,8 @@ import featurearticle from '../assets/image/content-card/Creative.png';
 import ad_4 from '../assets/image/ad-4.png';
 import hesai from '../assets/image/content-card/hesai.png'
 import happenopenings from '../assets/image/content-card/TG happnings.png';
-import marketindex from '../assets/image/content-card/market index.png'
+import marketindex from '../assets/image/content-card/market index.png';
+import po from'../assets/image/content-card/price outlook.png'
 
 const TrentGONewsletter = (props) => {
   return (
@@ -101,7 +102,7 @@ const TrentGONewsletter = (props) => {
 
               <div className="flex-card">
                 <img
-                  src={marketindex}
+                  src={po}
                   alt="Card 2"
                   className="card-main-img"
                 />

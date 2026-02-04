@@ -509,12 +509,14 @@ a {
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: orange !important;
 }
 
 .new-card-hover-content .hover-text p {
   font-size: 0.95rem;
   margin: 0.625rem 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+  color: #ffff !important;
 }
 
 .new-card-hover-content .btn {
@@ -1193,5 +1195,64 @@ img {
   .flex-card:active .card-hover-content {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* ============================= */
+/* 2K / LARGE DESKTOP FIX (2560px+) */
+/* ============================= */
+
+@media (min-width: 1600px) {
+
+  /* Wider layout */
+  .page-layout {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5rem;
+  }
+
+  /* Bigger cards for large screens */
+  .flex-card {
+    height: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    border-radius: 16px;
+  }
+
+  /* Better image presence */
+  .card-main-img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Stronger expand effect */
+  .expand-row:hover .flex-card {
+    flex: 0.9;
+  }
+
+  .expand-row .flex-card:hover {
+    flex: 2.6;
+  }
+
+  /* More breathing room for content */
+  .card-hover-content,
+  .new-card-hover-content {
+    padding: 24px;
+  }
+
+  /* Improve text readability */
+  .hover-text h6 {
+    font-size: 1.1rem;
+  }
+
+  .hover-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Sidebar feels proportional */
+  .sidebar-area {
+    width: 340px;
   }
 }
