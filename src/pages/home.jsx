@@ -153,7 +153,7 @@ const TrentGONewsletter = (props) => {
                   <div className="hover-item">
                     <div className="hover-text">
                       <h6>Monthly Featured Supplier</h6>
-                      <p>Advanced LiDAR sensors used in ADAS, autonomous vehicles, and robotics</p>
+                      <p>Hesai is a advanced LiDAR sensors used in ADAS, autonomous vehicles, and robotics</p>
                       <a
                         href="https://www.hesaitech.com"
                         target="_blank"
